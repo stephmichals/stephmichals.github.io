@@ -1,6 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Homenaje');
 
+@media print {
+  body{
+    color: #000
+  }
+}
+
+figcaption{
+  font: helvetica;
+  font-style: normal;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+h1{
+  page-break-before: always;
+}
+
+h1, h2, h3, h4, h5, h6{
+  page-break-after: avoid;
+}
+
+@page {
+  size: 5.5in 8.5in;
+}
+
+.fn {
+  float: footnote;
+}
+
+#container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav{
+  text-align: center;
+  border-bottom: 100px;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+}
+
+
 h1{
   font-family: 'Anton', sans-serif;
   color: #7B68EE;
@@ -9,14 +52,31 @@ h1{
   text-align: center;
 }
 
+h6{
+  float: right;
+  font-size: 30px;
+}
+
+h7 {
+  color: black;
+
+}
+
+#headshot{
+  float: left;
+}
+
 body {
-  background-color: #eee;
+  background-color: #E6E6FA;
   font-family: "Arial", sans-serif;
   color: #66b2ff;
   text-align: left;
   max-width: 960px;
   max-height: 960px;
+  overflow: auto;
 }
+
+{ border: 1px solid gray }
 
 p {
   float: right;
@@ -26,6 +86,7 @@ p {
   border: 3px dotted #0088dd;
   padding: 5px;
   margin: 25px;
+  margin-top: 0;
 }
 
 
@@ -48,6 +109,17 @@ h3 {
   color: blue;
   text-shadow: 1px 1px 1px black;
   font-family: 'Homenaje'
+}
+
+main{
+  align-items: center;
+  position: relative;
+  border: 3px;
+}
+
+h4 {
+  font-size: 20px;
+  color: deeppink;
 }
 
 a {
